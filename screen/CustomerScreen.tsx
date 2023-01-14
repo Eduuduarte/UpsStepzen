@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, SafeAreaView } from 'react-native';
+import { Text, SafeAreaView } from 'react-native';
 import { useTailwind } from 'tailwind-rn/dist';
 
 const CustomerScreen = () => {
@@ -13,4 +13,4 @@ const CustomerScreen = () => {
 
 }
 
-export default CustomerScreen
+export default CustomerScreen;
