@@ -1,0 +1,22 @@
+type Order {
+    Address: String
+    City: String
+    Lat: Float
+    Lng: Float
+    carrier: String
+    createdAt: Date
+    shippingCost: Int
+    trackingId: String
+    trackingItems: TrackingItems
+      @materializer(
+        name: "getTrackingItemsById"
+        arguments: [{ name: "id", field: "trackingId"}]
+      )
+}
+
+type Query {
+  getOrders: JSON
+    @rest(
+      endpoint: "https://ups-stepzen-d434f-default-rtdb.firebaseio.com/orders.json"
+    )
+}
