@@ -1,3 +1,4 @@
+import { useQuery } from '@apollo/client';
 import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 import { CompositeNavigationProp, useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -5,6 +6,7 @@ import { Image, Input } from '@rneui/themed';
 import React, { useState, useLayoutEffect } from 'react';
 import { Text, SafeAreaView, ScrollView, ActivityIndicator } from 'react-native';
 import { useTailwind } from 'tailwind-rn/dist';
+import { GET_CUSTOMERS } from '../graphql/queries';
 import { RootStackParamList } from '../navigator/RootNavigatior';
 import { TabStackParamList } from '../navigator/TabNavigator';
 
@@ -17,6 +19,7 @@ const CustomerScreen = () => {
   const tw = useTailwind();
   const navigation = useNavigation<CustomerScreenNavigationProp>();
   const [input, setInput] = useState<string>('');
+  const { loading, error, data } = useQuery(GET_CUSTOMERS);
 
   useLayoutEffect(() => {
     navigation.setOptions({
