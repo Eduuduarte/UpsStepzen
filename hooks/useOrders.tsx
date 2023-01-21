@@ -4,7 +4,7 @@ import { GET_ORDERS } from '../graphql/queries';
 
 const useOrders = () => {
     const { loading, error, data } = useQuery(GET_ORDERS);
-    const [orders, setOrders] = useState<Order[]>();
+    const [orders, setOrders] = useState<Order[]>([]);
 
     useEffect(() => {
         if (!data) return;

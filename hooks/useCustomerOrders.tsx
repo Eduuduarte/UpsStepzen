@@ -7,6 +7,7 @@ const useCustomerOrders = (userId: string) => {
 
     const [orders, setOrders] = useState<Order[]>([]);
 
+
     useEffect(() => {
         if(!data) return;
 
@@ -16,10 +17,10 @@ const useCustomerOrders = (userId: string) => {
             shippingCost: value.shippingCost,
             trackingId: value.trackingId,
             trackingItems: value.trackingItems,
-            Lat: value.Lat,
-            Lng: value.Lng,
             Address: value.Address,
-            City: value.City
+            City: value.City,
+            Lat: value.Lat,
+            Lng: value.Lng            
         }));
 
         const customerOrder = orders.filter((order) => order.trackingItems.customer_id === userId);
