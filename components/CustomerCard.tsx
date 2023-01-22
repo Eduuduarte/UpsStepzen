@@ -27,8 +27,8 @@ const CustomerCard = ({ email, name, userId }: Props) => {
               <Text style={[tw('text-sm'), { color: '#59C1CC' }]}>ID: {userId}</Text>
             </View>
 
-            <View>
-              <Text>{loading ? "loading..." : `${orders.length} x`}</Text>
+            <View style={[tw('flex-row'), {justifyContent: 'flex-end', alignItems: "center"}]}>
+              <Text style={{ color: '#59C1CC'}}>{loading ? "loading..." : `${orders.length} x`}</Text>
               <Icon
                 style={tw("mb-5 ml-auto")}
                 name="box"
