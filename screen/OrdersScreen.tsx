@@ -8,6 +8,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useTailwind } from 'tailwind-rn/dist';
 import useOrders from '../hooks/useOrders';
 import { Button, Image } from '@rneui/themed';
+import OrderCard from '../components/OrderCard';
 
 // type OrderScreenRouteProp = RouteProp<RootStackParamList, "Order">;
 
@@ -55,7 +56,9 @@ const OrdersScreen = () => {
           } else {
             return new Date(a.createdAt) < new Date(b.createdAt) ? 1 : -1;
           }
-        })}
+        }).map( order => (
+          <OrderCard key={order.trackingId} item={order}/>
+        ))}
       </View>
     </ScrollView>
   )
