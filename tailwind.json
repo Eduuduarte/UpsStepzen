@@ -141,5 +141,10 @@
 		"style": {
 			"textTransform": "capitalize"
 		}
+	},
+	"italic": {
+		"style": {
+			"fontStyle": "italic"
+		}
 	}
 }
