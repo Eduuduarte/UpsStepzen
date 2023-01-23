@@ -105,6 +105,18 @@
 			"paddingRight": 40
 		}
 	},
+	"py-2": {
+		"style": {
+			"paddingTop": 8,
+			"paddingBottom": 8
+		}
+	},
+	"px-5": {
+		"style": {
+			"paddingLeft": 20,
+			"paddingRight": 20
+		}
+	},
 	"pt-5": {
 		"style": {
 			"paddingTop": 20

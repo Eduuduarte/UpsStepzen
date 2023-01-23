@@ -44,7 +44,7 @@ const DeliveryCard = ({ order }: Props) => {
           </Text>
           <Divider color='white'/>
 
-          <View style={{maxWidth: "auto"}}>
+          <View style={{maxWidth: "auto", paddingBottom: 2}}>
             <Text style={[tw("font-bold"), {
               marginTop: 10,
               textAlign: 'center',
