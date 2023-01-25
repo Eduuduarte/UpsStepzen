@@ -4,6 +4,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import React, {useLayoutEffect} from 'react';
 import {View, Text} from 'react-native';
 import { useTailwind } from 'tailwind-rn/dist';
+import DeliveryCard from '../components/DeliveryCard';
 import { RootStackParamList } from '../navigator/RootNavigatior';
 import { TabStackParamList } from '../navigator/TabNavigator';
 
@@ -31,7 +32,7 @@ const OrderScreen = () => {
 
   return (
    <View style={tw("mt-2")}>
-    <Text> OrderScreen</Text>
+    <DeliveryCard order={order} full/>
    </View>
   )
 }
