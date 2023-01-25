@@ -30,7 +30,6 @@ const DeliveryCard = ({ order, full }: Props) => {
 
         <View style={{
           alignItems: 'flex-start',
-          padding: 3,
           marginTop: 2
         }}>
           <View >
