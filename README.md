@@ -19,7 +19,26 @@
     npm install @react-navigation/native
 ```
 
-* [Link para qualquer coisa](coloque aqui o link);
+```bash
+    npm install @react-navigation/native-stack
+```
+
+<p>Theme and base</p>
+
+```bash
+    npm install @rneui/themed @rneui/base
+```
+
+
+
+<p>Icons</p>
+
+```bash
+    npm install --save react-native-vector-icons
+```
+
+
+* [stepzen](https://stepzen.com/);
 
 
 <p align="center">Made with 💙 by Eduardo Duarte 👽</p>
