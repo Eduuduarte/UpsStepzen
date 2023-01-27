@@ -19,12 +19,6 @@
 			"position": "relative"
 		}
 	},
-	"mx-auto": {
-		"style": {
-			"marginLeft": "auto",
-			"marginRight": "auto"
-		}
-	},
 	"mb-5": {
 		"style": {
 			"marginBottom": 20

@@ -30,7 +30,6 @@
 ```
 
 
-
 <p>Icons</p>
 
 ```bash
@@ -39,6 +38,13 @@
 
 
 * [stepzen](https://stepzen.com/);
+
+### Orders Screen
+![ordersScreen](./OrdersScreen.png)
+
+### Customer Screen
+![customerScreen](./CustomerScreen.png)
+
 
 
 <p align="center">Made with 💙 by Eduardo Duarte 👽</p>
