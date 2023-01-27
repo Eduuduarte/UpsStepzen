@@ -47,7 +47,7 @@ const OrdersScreen = () => {
         titleStyle={{ color: "gray", fontWeight: "400" }}
         style={{padding: 10}}
         >
-          {ascending ? "Showing: oldest first" :  "Showing: Most recent first"}
+          {ascending ? "Mostrar do mais velho" :  "Mostrar do mais recente"}
         </Button>
 
         {orders?.sort((a, b) => {

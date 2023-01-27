@@ -38,7 +38,7 @@ const CustomerScreen = () => {
       />
 
       <Input
-        placeholder='Search by Customer'
+        placeholder='Procurar por cliente'
         value={input}
         onChangeText={text => setInput(text)}
         containerStyle={tw("bg-white pt-5 pb-0 px-10")}
