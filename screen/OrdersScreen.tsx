@@ -26,8 +26,8 @@ const OrdersScreen = () => {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false,
-      tabBarLabel: ({focused, color}) => (
-        <Text style={{ color: focused ? "#EB6A7C" : color, fontSize: 10 }}>Orders</Text>
+      tabBarLabel: ({ focused, color }) => (
+        <Text style={{color: focused ? "#EB6A7C" : color, fontSize: 10 }}>Orders</Text>
       )
     })
   }, []);

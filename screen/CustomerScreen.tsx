@@ -12,7 +12,7 @@ import { RootStackParamList } from '../navigator/RootNavigatior';
 import { TabStackParamList } from '../navigator/TabNavigator';
 
 export type CustomerScreenNavigationProp =
-  CompositeNavigationProp<BottomTabNavigationProp<TabStackParamList, 'Customers'>, NativeStackNavigationProp<RootStackParamList>>;
+  CompositeNavigationProp<BottomTabNavigationProp<TabStackParamList, 'Clientes'>, NativeStackNavigationProp<RootStackParamList>>;
 
 
 
