@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Icon } from '@rneui/themed';
 
 export type TabStackParamList = {
-  Clientes: undefined;
+  Customers: undefined;
   Orders: undefined;
 }
 
@@ -26,7 +26,7 @@ const TabNavigator = () => {
       tabBarActiveTintColor: "#59C1CC",
       tabBarInactiveTintColor: "gray",
       tabBarIcon: ({ focused, color, size }) => {
-        if (route.name === 'Clientes') {
+        if (route.name === 'Customers') {
           return (
             <Icon
               name="users"
@@ -45,7 +45,7 @@ const TabNavigator = () => {
         }
       }
     })}>
-      <Tab.Screen name="Clientes" component={CustomerScreen} />
+      <Tab.Screen name="Customers" component={CustomerScreen} />
       <Tab.Screen name="Orders" component={OrdersScreen} />
     </Tab.Navigator>
   )
