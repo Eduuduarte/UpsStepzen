@@ -40,11 +40,11 @@ const OrdersScreen = () => {
         PlaceholderContent={<ActivityIndicator />}
       />
 
-      <View>
+      <View style={{ padding: 10}}>
         <Button 
         onPress={() => setAscending(!ascending)}
         color="pink"
-        titleStyle={{ color: "gray", fontWeight: "400" }}
+        titleStyle={{ color: "gray", fontWeight: "400", marginLeft: 10, marginRight: 10 }}
         style={{padding: 10}}
         >
           {ascending ? "Mostrar do mais velho" :  "Mostrar do mais recente"}
